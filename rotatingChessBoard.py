@@ -4,12 +4,9 @@ def chessNotation(notation):
     notations = notation.split('/')
     notations = divideEmptySpaces(notations)
     
-    
     # -- initialize rotatedNotation list and compiledNotation string -- #
     rotatedNotation = [""] * 8
-    compiledNotation = ""
-    
-    
+    compiledNotation = ""  
     
     # -- Create new rotatedNotation from notations list -- #
     for row in notations:       
@@ -48,11 +45,7 @@ def divideEmptySpaces(notations):
                     i += 1
         parsedNotations.append(addedRow)
         
-    return parsedNotations
-            
-            
-            
-            
+    return parsedNotations        
             
         
 def addEmptySpaces (row):
